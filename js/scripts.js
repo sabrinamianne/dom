@@ -3,9 +3,12 @@ $(document).ready(function() {
     $("ul#user").prepend("<li>Hello!</li>");
     $("ul#webpage").prepend("<li>Why hello there!</li>");
 
-    $("li").click(function(){
+    $("ul#user").children("li").first().click(function(){
       alert("Hi");
-    })
+    });
+    $("ul#webpage").children("li").first().click(function(){
+      alert("Hi user!");
+    });
   });
 
 
